@@ -1,26 +1,26 @@
 
-<input id = "myNum01" value = 4 ><br>
-<input type = button value = "Simple If Statement " Onclick="{
+<input id= "myNum01" value= 4 ><br>
+<input type= button value= "Simple If Statement " Onclick="{
   let myIn01 = parsefloat(document.getElementbyId('myNum01').value)
   If (myIn01 >= 3){
-    document.getElementById('myDiv01').innerHTML = myIn01 + ' is Greater Than 3'
+    document.getElementById('myDiv01').innerHTML= myIn01 + ' is Greater Than 3'
   }
 }" >
 
-<input type = button value = " If else Statement " Onclick="{
-  let myIn01 = parsefloat(document.getElementbyId('myNum01').value)
+<input type= button value= " If else Statement " Onclick="{
+  let myIn01= parsefloat(document.getElementbyId('myNum01').value)
   If (myIn01 >= 3){
-    document.getElementById('myDiv01').innerHTML = myIn01 + ' is Greater Than 3'
+    document.getElementById('myDiv01').innerHTML= myIn01 + ' is Greater Than 3'
   } else {
-   document.getElementById('myDiv01').innerHTML = myIn01 + ' is Less Than 3'}
+   document.getElementById('myDiv01').innerHTML= myIn01 + ' is Less Than 3'}
 }" >
 
-<input type = button value = " Complex If statement " Onclick="{
+<input type= button value= " Complex If statement " Onclick="{
   let myIn01 = parsefloat(document.getElementbyId('myNum01').value)
   If ((myIn01 != 3 ||  myIn01 > -3) && myIn01 <= 100 ){
-    document.getElementById('myDiv01').innerHTML = myIn01 + ' is Complex'
+    document.getElementById('myDiv01').innerHTML= myIn01 + ' is Complex'
   } else {
-   document.getElementById('myDiv01').innerHTML = myIn01 + ' isnt Complex'}
+   document.getElementById('myDiv01').innerHTML= myIn01 + ' isnt Complex'}
 }" >
        
-<div id = "myDiv01"> </div>
+<div id= "myDiv01"> </div>
