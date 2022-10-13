@@ -3,7 +3,7 @@
 
 <input id= "myNum01" value= "4" ><br>
 <input type=button value="Simple If Statement " 
-       Onclick="{
+       onclick="{
   let myIn01 = parseFloat(document.getElementById('myNum01').value)
   If (myIn01 >= 3){
     document.getElementById('myDiv01').innerHTML= myIn01 + ' is Greater Than 3'
@@ -12,18 +12,17 @@
 }" >
 
 <input type= button value= " If else Statement "
-       Onclick="{
+       onclick="{
   let myIn01= parseFloat(document.getElementById('myNum01').value)
   If (myIn01 >= 3){
     document.getElementById('myDiv01').innerHTML= myIn01 + ' is Greater Than 3'
-   else 
-  {
+   else {
 document.getElementById('myDiv01').innerHTML= myIn01 + ' is Less Than 3'}
   
 }" >
 
 <input type=button value=" Complex If statement " 
-       Onclick="{
+       onclick="{
   let myIn01 = parseFloat(document.getElementbyId('myNum01').value)
   If ((myIn01 != 3 ||  myIn01 > -3) && myIn01 <= 100 ){
     document.getElementById('myDiv01').innerHTML= myIn01 + ' is Complex'
