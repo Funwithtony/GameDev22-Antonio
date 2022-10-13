@@ -1,1 +1,18 @@
 
+<input id="myNum01" type=number value="4" > <br>
+<input type=button value="simple If statement " onclick="{
+                                                         let myIn01 = parseFloat(document.getElementById('myNum01').value)
+                                                         if (myIn01 >= 3){
+                                                         document.getElementById('myDiv01').innerHTML = myIn01 + 'is greater than 3 '
+                                                         }
+                                                     }">
+ <input type=button value = "if else" onclick="{
+                                               let myIn01 = parseFloat(document.getElementById('myNum01').value)
+                                               if (myIn01 >= 3 ){
+                                               document.getElementById('myDiv01').innerHTML = myIn01 + 'is greatere than three'
+                                               } else {
+                                               document.getElementById('myDiv01').innerHTML = myIn01 + 'is less than 3'
+                                               }">
+
+
+<div id="myDiv01"> </div>
