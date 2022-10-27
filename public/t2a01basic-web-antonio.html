@@ -37,7 +37,20 @@ Max Array Entry: <input type=text id="myText01" value="3"><br>
    }
    document.getElementById('myDiv01').innerHTML = mySum
 }">
+<input type=button value="Example onClick" onClick="{
+   let myTemp = document.getElementById('myText01').value
+   let mySum = ''
+   document.getElementById('myDiv01').innerHTML = ' '
+   myArray = new Array()
 
+   myArray[3] = '1'
+   myArray[4] = '12'     
+                                                           
+   for (let myLoop=0;   myLoop < myTemp;  myLoop++){
+      mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] +'<br>'
+   }
+   document.getElementById('myDiv01').innerHTML = mySum
+}">
 <div id="myDiv01">...</div>
 
 
@@ -48,7 +61,9 @@ Footer
 © 2022 GitHub, Inc.
 Footer navigation
 Terms
-
+   myArray[5] = Math.random() * 10 + 'random number generator 1-10'   
+   myArray[6] = Math.random() * 100 + 'random number generator 1-100' 
+   myArray[7] = Math.floor(Math.random() * 10) + 'random number generator 1-10'             
 ///let myarray = ([1,2], [3,4], [5,6];
 
 
