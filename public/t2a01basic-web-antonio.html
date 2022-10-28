@@ -55,4 +55,22 @@ myArray02[4] = 'Math.random() * 100000 + 'random number generator 1-100000'
 document.getElementById('myDiv01').innerHTML = mySum02
                                                             
 }">     
+
+<input type=button value=" random integer array" onClick="{
+ let myTemp03 = document.getElementById('myText01').value
+   let mySum03 = ''
+   document.getElementById('myDiv01').innerHTML = ' '                                                            
+myArray03 = new Array()                                                    
+myArray03[0] = 'Math.round(Math.random() * 10 + 'random integer generator 1-10' 
+myArray03[1] = 'Math.round(Math.random() * 100 + 'random integer generator 1-100'                                                             
+myArray03[2] = 'Math.round(Math.random() * 1000 + 'random integer generator 1-1000' 
+myArray03[3] = 'Math.round(Math.random() * 10000 + 'random integer generator 1-10000'                                                             
+myArray03[4] = 'Math.round(Math.random() * 100000 + 'random integer generator 1-100000' 
+ for (let myLoop03=0;   myLoop03 < myTemp03;  myLoop03++){
+      mySum03 += 'Loop #: ' + myLoop03 + ' array entry: ' + myArray03[myLoop03] +'<br>'
+   }                                                            
+document.getElementById('myDiv01').innerHTML = mySum03
+                                                            
+}">     
+
 <div id="myDiv01">...</div>
