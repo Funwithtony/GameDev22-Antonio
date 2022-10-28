@@ -12,9 +12,9 @@ Max Array Entry: <input type=text id="myText01" value="3"><br>
    myArray[2] = 'za'
    myArray[3] = '1'
    myArray[4] = '12'     
-   myArray[5] = 'Math.random() * 10 + 'random number generator 1-10'   
-   myArray[6] = 'Math.random() * 100 + 'random number generator 1-100' 
-   myArray[7] = 'Math.round(Math.random() * 10) + 'random number generator 1-10'                                                            
+   myArray[5] = Math.random() * 10 + 'random number generator 1-10'   
+   myArray[6] = Math.random() * 100 + 'random number generator 1-100' 
+   myArray[7] = Math.round(Math.random() * 10) + 'random number generator 1-10'                                                            
    for (let myLoop=0;   myLoop < myTemp;  myLoop++){
       mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] +'<br>'
    }
@@ -44,11 +44,11 @@ document.getElementById('myDiv01').innerHTML = mySum01
    let mySum02 = ''
    document.getElementById('myDiv01').innerHTML = ' '                                                            
 myArray02 = new Array()                                                    
-myArray02[0] = 'Math.random() * 10 + 'random number generator 1-10' 
-myArray02[1] = 'Math.random() * 100 + 'random number generator 1-100'                                                             
-myArray02[2] = 'Math.random() * 1000 + 'random number generator 1-1000' 
-myArray02[3] = 'Math.random() * 10000 + 'random number generator 1-10000'                                                             
-myArray02[4] = 'Math.random() * 100000 + 'random number generator 1-100000' 
+myArray02[0] = Math.random() * 10 + 'random number generator 1-10' 
+myArray02[1] = Math.random() * 100 + 'random number generator 1-100'                                                             
+myArray02[2] = Math.random() * 1000 + 'random number generator 1-1000' 
+myArray02[3] = Math.random() * 10000 + 'random number generator 1-10000'                                                             
+myArray02[4] = Math.random() * 100000 + 'random number generator 1-100000' 
  for (let myLoop02=0;   myLoop02 < myTemp02;  myLoop02++){
       mySum02 += 'Loop #: ' + myLoop02 + ' array entry: ' + myArray02[myLoop02] +'<br>'
    }                                                            
@@ -61,11 +61,11 @@ document.getElementById('myDiv01').innerHTML = mySum02
    let mySum03 = ''
    document.getElementById('myDiv01').innerHTML = ' '                                                            
 myArray03 = new Array()                                                    
-myArray03[0] = 'Math.round(Math.random() * 10 + 'random integer generator 1-10' 
-myArray03[1] = 'Math.round(Math.random() * 100 + 'random integer generator 1-100'                                                             
-myArray03[2] = 'Math.round(Math.random() * 1000 + 'random integer generator 1-1000' 
-myArray03[3] = 'Math.round(Math.random() * 10000 + 'random integer generator 1-10000'                                                             
-myArray03[4] = 'Math.round(Math.random() * 100000 + 'random integer generator 1-100000' 
+myArray03[0] = Math.round(Math.random() * 10 + 'random integer generator 1-10' 
+myArray03[1] = Math.round(Math.random() * 100 + 'random integer generator 1-100'                                                             
+myArray03[2] = Math.round(Math.random() * 1000 + 'random integer generator 1-1000' 
+myArray03[3] = Math.round(Math.random() * 10000 + 'random integer generator 1-10000'                                                             
+myArray03[4] = Math.round(Math.random() * 100000 + 'random integer generator 1-100000' 
  for (let myLoop03=0;   myLoop03 < myTemp03;  myLoop03++){
       mySum03 += 'Loop #: ' + myLoop03 + ' array entry: ' + myArray03[myLoop03] +'<br>'
    }                                                            
