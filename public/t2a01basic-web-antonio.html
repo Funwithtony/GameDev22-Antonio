@@ -21,15 +21,21 @@ Max Array Entry: <input type=text id="myText01" value="3"><br>
  document.getElementById('myDiv01').innerHTML = mySum
 }">
 
-<input type=button value="random number generator" onClick="{
- let myTemp = document.getElementById('myText01').value
-   let mySum = ''
+<input type=button value="number array" onClick="{
+ let myTemp01 = document.getElementById('myText01').value
+   let mySum01 = ''
    document.getElementById('myDiv01').innerHTML = ' '                                                            
 myArray01 = new Array()                                                    
-myArray[0] = '22' 
-myArray[1] = '12'                                                             
-myArray[2] = '121111' 
-myArray[3] = '1222'                                                             
-myArray[4] = '121'                                                             
-document.getElementById('myDiv01').innerHTML = mySum
+myArray01[0] = '22' 
+myArray01[1] = '12'                                                             
+myArray01[2] = '121111' 
+myArray01[3] = '1222'                                                             
+myArray01[4] = '121' 
+ for (let myLoop01=0;   myLoop01 < myTemp01;  myLoop01++){
+      mySum01 += 'Loop #: ' + myLoop01 + ' array entry: ' + myArray01[myLoop01] +'<br>'
+   }                                                            
+document.getElementById('myDiv01').innerHTML = mySum01
+                                                            
+}">                                                            
+                                                            
 <div id="myDiv01">...</div>
