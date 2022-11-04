@@ -6,7 +6,7 @@ body{
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: 100% 100%;
- opacity: myOpacity01
+ 
 
  }
 </style>
@@ -32,11 +32,16 @@ let myPerson = {
            document.getElementById('myDiv01').innerHTML += 'You do the others  <br>Like this: <br>LastName: '+myPerson.lastName+'<br>Age:' +myPerson.age+ '<br>EyeColor: ' +myPerson.eyeColor
         }">
 
+function myOpacity() {
+let myOpacity = document.getElementById('myOpacity').value
+document.getElementById('myOpacity').innerHTML = myOpacity
+document.body.style.opacity = myOpacity
 
+}
 
 <br>
 let myValue01
-<input id="myopacity01" type=text value="write the opacity percent" >  
+<input  type=button value="hit to lower opacity" >  
                                                           
 
 <div id="myDiv01"> . . . </div>
