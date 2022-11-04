@@ -16,11 +16,12 @@ document.getElementById('myDiv01').innerHTML = myInt01
 <h4> Example Working code </h4>
 <input id="myText01" type=text value="the dog"><br>
 <input type=button value="Show var" onclick="{
- Let myInt01 = document.getElementById('myText01').value
- document.getElementById('myDiv01').innerHTML = myInt01   
+ Let myIn01 = document.getElementById('myText01').value
+ document.getElementById('myDiv01').innerHTML = myIn01   
  }"><br>
  <input type=button value="Using no variable" onclick="{
-  document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
+  document.getElementById('myDiv01').innerHTML =
+  document.getElementById('myText01').value
  }"><br>                                                      
                                                      
 <div id="myDiv01">....</div>                                                       
