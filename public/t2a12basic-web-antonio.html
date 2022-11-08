@@ -14,7 +14,7 @@
 <script>
   
   function myTotal() {
-    myTotal02 = parseFloat(document.getElementById('salaryId').value) * parseFloat(document.getElementById('hoursId').value)
+    myTotal02 = parseFloat(document.getElementById('salaryId').value) * parseFloat(document.getElementById('hoursId').value) / (parseFloat(document.getElementById('TaxId').value) / 100)
     document.getElementById('mydiv01').innerHTML = myTotal02
   }
 </script>
