@@ -1,2 +1,16 @@
 <h1>t2a12-Taxes-Antonio</h1>
-<input id = "mysalary" type=text 
+<input id = "salaryId"  type=text  value=1>
+<br>
+<input id="hoursId" type=text value=1>
+<br>
+<input id="TaxId" type=text value=1>
+
+
+<script>
+  var myTotal02 = 0
+  function myTotal() {
+    myTotal02 = parseFloat(document.getElementById('salaryId').value) * parseFloat(document.getElementById('hoursId').value)
+    mydiv01 = myTotal02
+  }
+  <div id="mydiv01">...</div>
+</script>
