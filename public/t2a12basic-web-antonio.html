@@ -1,9 +1,11 @@
 <h1>t2a12-Taxes-Antonio</h1>
+<script>
 <input id = "salaryId"  type=text  value=1>
 <br>
 <input id="hoursId" type=text value=1>
 <br>
 <input id="TaxId" type=text value=1>
+
 <input id="mybutton" type=button value="Click to calculate" onclick "{
        myTotal()                                                              
        
@@ -13,7 +15,7 @@
       }">
 
 
-<script>
+
   var myTotal02 = 0
   function myTotal() {
     myTotal02 = parseFloat(document.getElementById('salaryId').value) * parseFloat(document.getElementById('hoursId').value)
