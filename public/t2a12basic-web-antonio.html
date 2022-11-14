@@ -8,6 +8,7 @@
 
 <input id="mybutton" type=button value="Click to calculate" onclick="{
        myTotal()
+       document.getElementById('mydiv01').innerHTML = myTotal01                                                             
       }">
 
 
@@ -18,7 +19,9 @@
     let mytotalpercent = parseFloat(document.getElementById('TaxId').value) 
     let mysalary =  parseFloat(document.getElementById('salaryId').value)
      let myhours = parseFloat(document.getElementById('hoursId').value)
-    myTotal02 = mysalary * myhours -  mysalary * myhours * mytotalpercent
+    let myTotal02 = mysalary * myhours -  mysalary * myhours * mytotalpercent
+    let 
+    
     return mytotal02
   }
 </script>
