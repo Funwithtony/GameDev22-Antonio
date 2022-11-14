@@ -15,7 +15,7 @@
   
   function myTotal() {
          
-    let mytotalpercent = (parseFloat(document.getElementById('TaxId').value) / 100)
+    let mytotalpercent = parseFloat(document.getElementById('TaxId').value) 
     let mysalary =  parseFloat(document.getElementById('salaryId').value)
      let myhours = parseFloat(document.getElementById('hoursId').value)
     myTotal02 = mysalary * myhours -  mysalary * myhours * mytotalpercent
