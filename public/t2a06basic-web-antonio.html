@@ -9,8 +9,33 @@
    myString = document.getElementById('myArea01').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
-      if (myString[myLoop] == 'e') {myTemp  = 'f'} 
-      if (myString[myLoop] == 'h') {myTemp  = 'i'} 
+      if (myString[myLoop] == 'a') {myTemp  = '01'} 
+      if (myString[myLoop] == 'b') {myTemp  = '02'}
+      if (myString[myLoop] == 'c') {myTemp  = '03'} 
+      if (myString[myLoop] == 'd') {myTemp  = '04'} 
+      if (myString[myLoop] == 'e') {myTemp  = '05'} 
+      if (myString[myLoop] == 'f') {myTemp  = '06'} 
+      if (myString[myLoop] == 'g') {myTemp  = '07'} 
+      if (myString[myLoop] == 'h') {myTemp  = '08'} 
+      if (myString[myLoop] == 'i') {myTemp  = '09'} 
+      if (myString[myLoop] == 'j') {myTemp  = '10'}                                       
+      if (myString[myLoop] == 'k') {myTemp  = '11'}
+      if (myString[myLoop] == 'l') {myTemp  = '12'}                                             
+      if (myString[myLoop] == 'm') {myTemp  = '13'}                                      
+      if (myString[myLoop] == 'n') {myTemp  = '14'}                                      
+      if (myString[myLoop] == 'o') {myTemp  = '15'}                                      
+      if (myString[myLoop] == 'p') {myTemp  = '16'}                                      
+      if (myString[myLoop] == 'q') {myTemp  = '17'}                                      
+      if (myString[myLoop] == 'r') {myTemp  = '18'}                                      
+      if (myString[myLoop] == 's') {myTemp  = '19'}                                      
+      if (myString[myLoop] == 't') {myTemp  = '20'}                                      
+      if (myString[myLoop] == 'u') {myTemp  = '21'} 
+      if (myString[myLoop] == 'v') {myTemp  = '22'}
+      if (myString[myLoop] == 'w') {myTemp  = '23'}                              
+      if (myString[myLoop] == 'x') {myTemp  = '24'}                                      
+      if (myString[myLoop] == 'y') {myTemp  = '25'}                                     
+      if (myString[myLoop] == 'z') {myTemp  = '26'}                                      
+                                            
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
@@ -21,7 +46,7 @@
 <textarea id="myArea02" rows=4 cols=70></textarea><br> 
 
 <input type=button value="decrypt" onclick="{
-   alert('Sorry, you have to do this!')
+
 }"><br><br>
 
 
