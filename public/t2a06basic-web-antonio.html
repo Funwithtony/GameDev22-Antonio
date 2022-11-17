@@ -47,7 +47,7 @@
 
 <input type=button value="decrypt" onclick="{
 let myTemp01 = ' '
-   myString01 = document.getElementById('myArea02').value.split('  ')
+   myString01 = document.getElementById('myArea02').value.match(/.{1,2}/g).split('  ')
    for (let myLoop01=0;   myLoop01 < myString01.length; myLoop01++){
       myTemp01 = myString01[myLoop01]
       if (myString01[myLoop01] == '01') {myTemp01  = 'a'} 
