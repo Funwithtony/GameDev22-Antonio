@@ -15,7 +15,7 @@ body{
 <textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
 
 
-<input type=button value="encrypt" onclick="{
+<input type=button value="antonio encrypt" onclick="{
    let myTemp = ''
    myString = document.getElementById('myArea01').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
@@ -51,43 +51,118 @@ body{
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
+}">
+<input type=button value=" ellis encrypt" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop4] == ' ') {myTemp  = ''}                                      
+      if (myString[myLoop4] == 'a') {myTemp  = 'z'} 
+      if (myString[myLoop4] == 'b') {myTemp  = 'a'}
+      if (myString[myLoop4] == 'c') {myTemp  = 'b'} 
+      if (myString[myLoop4] == 'd') {myTemp  = 'c'} 
+      if (myString[myLoop4] == 'e') {myTemp  = 'd'} 
+      if (myString[myLoop4] == 'f') {myTemp  = 'e'} 
+      if (myString[myLoop4] == 'g') {myTemp  = 'f'} 
+      if (myString[myLoop4] == 'h') {myTemp  = 'g'} 
+      if (myString[myLoop4] == 'i') {myTemp  = 'h'} 
+      if (myString[myLoop4] == 'j') {myTemp  = 'i'}                                       
+      if (myString[myLoop4] == 'k') {myTemp  = 'j'}
+      if (myString[myLoop4] == 'l') {myTemp  = 'k'}                                             
+      if (myString[myLoop4] == 'm') {myTemp  = 'l'}                                      
+      if (myString[myLoop4] == 'n') {myTemp  = 'm'}                                      
+      if (myString[myLoop4] == 'o') {myTemp  = 'n'}                                      
+      if (myString[myLoop4] == 'p') {myTemp  = 'o'}                                      
+      if (myString[myLoop4] == 'q') {myTemp  = 'p'}                                      
+      if (myString[myLoop4] == 'r') {myTemp  = 'q'}                                      
+      if (myString[myLoop4] == 's') {myTemp  = 'r'}                                      
+      if (myString[myLoop4] == 't') {myTemp  = 's'}                                      
+      if (myString[myLoop4] == 'u') {myTemp  = 't'} 
+      if (myString[myLoop4] == 'v') {myTemp  = 'u'}
+      if (myString[myLoop4] == 'w') {myTemp  = 'v'}                              
+      if (myString[myLoop4] == 'x') {myTemp  = 'w'}                                      
+      if (myString[myLoop4] == 'y') {myTemp  = 'x'}                                     
+      if (myString[myLoop4] == 'z') {myTemp  = 'z'}                                      
+                                            
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea02').value = myString.join('')
 }"><br><br>
-
 
 
 <textarea id="myArea02" rows=4 cols=70></textarea><br> 
 
+<input type=button value="antonio decrypt" onclick="{
+let myTemp02 = ''
+   myString02 = document.getElementById('myArea02').value.match(/.{1,2}/g) ?? [].split(' ')
+   for (let myLoop02=0;   myLoop02 < myString02.length; myLoop02++){
+      myTemp02 = myString02[myLoop02]
+      if (myString02[myLoop02] == '00') {myTemp02  = ' '}                                      
+      if (myString02[myLoop02] == '01') {myTemp02  = 'a'} 
+      if (myString02[myLoop02] == '02') {myTemp02  = 'b'}
+      if (myString02[myLoop02] == '03') {myTemp02  = 'c'} 
+      if (myString02[myLoop02] == '04') {myTemp02  = 'd'} 
+      if (myString02[myLoop02] == '05') {myTemp02  = 'e'} 
+      if (myString02[myLoop02] == '06') {myTemp02  = 'f'} 
+      if (myString02[myLoop02] == '07') {myTemp02  = 'g'} 
+      if (myString02[myLoop02] == '08') {myTemp02  = 'h'} 
+      if (myString02[myLoop02] == '09') {myTemp02  = 'i'} 
+      if (myString02[myLoop02] == '10') {myTemp02  = 'j'}                                       
+      if (myString02[myLoop02] == '11') {myTemp02  = 'k'}
+      if (myString02[myLoop02] == '12') {myTemp02  = 'l'}                                             
+      if (myString02[myLoop02] == '13') {myTemp02  = 'm'}                                      
+      if (myString02[myLoop02] == '14') {myTemp02  = 'n'}                                      
+      if (myString02[myLoop02] == '15') {myTemp02  = 'o'}                                      
+      if (myString02[myLoop02] == '16') {myTemp02  = 'p'}                                      
+      if (myString02[myLoop02] == '17') {myTemp02  = 'q'}                                      
+      if (myString02[myLoop02] == '18') {myTemp02  = 'r'}                                      
+      if (myString02[myLoop02] == '19') {myTemp02  = 's'}                                      
+      if (myString02[myLoop02] == '20') {myTemp02  = 't'}                                      
+      if (myString02[myLoop02] == '21') {myTemp02  = 'u'} 
+      if (myString02[myLoop02] == '22') {myTemp02  = 'v'}
+      if (myString02[myLoop02] == '23') {myTemp02  = 'w'}                              
+      if (myString02[myLoop02] == '24') {myTemp02  = 'x'}                                      
+      if (myString02[myLoop02] == '25') {myTemp02  = 'y'}                                     
+      if (myString02[myLoop02] == '26') {myTemp02  = 'z'}                                      
+           
+                                            
+      myString02[myLoop02] = myTemp02
+                                            }
+                                              document.getElementById('myArea03').value = myString02.join('')
+}">
+
 <input type=button value="decrypt" onclick="{
 let myTemp01 = ' '
-   myString01 = document.getElementById('myArea02').value.match(/.{1,2}/g) ?? [].split(' ')
+   myString01 = document.getElementById('myArea02').value.toLowerCase().split('')
    for (let myLoop01=0;   myLoop01 < myString01.length; myLoop01++){
       myTemp01 = myString01[myLoop01]
-      if (myString01[myLoop01] == '00') {myTemp01  = ' '}                                      
-      if (myString01[myLoop01] == '01') {myTemp01  = 'a'} 
-      if (myString01[myLoop01] == '02') {myTemp01  = 'b'}
-      if (myString01[myLoop01] == '03') {myTemp01  = 'c'} 
-      if (myString01[myLoop01] == '04') {myTemp01  = 'd'} 
-      if (myString01[myLoop01] == '05') {myTemp01  = 'e'} 
-      if (myString01[myLoop01] == '06') {myTemp01  = 'f'} 
-      if (myString01[myLoop01] == '07') {myTemp01  = 'g'} 
-      if (myString01[myLoop01] == '08') {myTemp01  = 'h'} 
-      if (myString01[myLoop01] == '09') {myTemp01  = 'i'} 
-      if (myString01[myLoop01] == '10') {myTemp01  = 'j'}                                       
-      if (myString01[myLoop01] == '11') {myTemp01  = 'k'}
-      if (myString01[myLoop01] == '12') {myTemp01  = 'l'}                                             
-      if (myString01[myLoop01] == '13') {myTemp01  = 'm'}                                      
-      if (myString01[myLoop01] == '14') {myTemp01  = 'n'}                                      
-      if (myString01[myLoop01] == '15') {myTemp01  = 'o'}                                      
-      if (myString01[myLoop01] == '16') {myTemp01  = 'p'}                                      
-      if (myString01[myLoop01] == '17') {myTemp01  = 'q'}                                      
-      if (myString01[myLoop01] == '18') {myTemp01  = 'r'}                                      
-      if (myString01[myLoop01] == '19') {myTemp01  = 's'}                                      
-      if (myString01[myLoop01] == '20') {myTemp01  = 't'}                                      
-      if (myString01[myLoop01] == '21') {myTemp01  = 'u'} 
-      if (myString01[myLoop01] == '22') {myTemp01  = 'v'}
-      if (myString01[myLoop01] == '23') {myTemp01  = 'w'}                              
-      if (myString01[myLoop01] == '24') {myTemp01  = 'x'}                                      
-      if (myString01[myLoop01] == '25') {myTemp01  = 'y'}                                     
+      if (myString01[myLoop01] == 'a') {myTemp01  = 'b'}                                      
+      if (myString01[myLoop01] == 'b') {myTemp01  = 'c'} 
+      if (myString01[myLoop01] == 'c') {myTemp01  = 'd'}
+      if (myString01[myLoop01] == 'd') {myTemp01  = 'e'} 
+      if (myString01[myLoop01] == 'e') {myTemp01  = 'f'} 
+      if (myString01[myLoop01] == 'f') {myTemp01  = 'g'} 
+      if (myString01[myLoop01] == 'g') {myTemp01  = 'h'} 
+      if (myString01[myLoop01] == 'h') {myTemp01  = 'i'} 
+      if (myString01[myLoop01] == 'i') {myTemp01  = 'j'} 
+      if (myString01[myLoop01] == 'j') {myTemp01  = 'k'} 
+      if (myString01[myLoop01] == 'k') {myTemp01  = 'l'}                                       
+      if (myString01[myLoop01] == 'l') {myTemp01  = 'm'}
+      if (myString01[myLoop01] == 'm') {myTemp01  = 'n'}                                             
+      if (myString01[myLoop01] == 'n') {myTemp01  = 'o'}                                      
+      if (myString01[myLoop01] == 'o') {myTemp01  = 'p'}                                      
+      if (myString01[myLoop01] == 'p') {myTemp01  = 'q'}                                      
+      if (myString01[myLoop01] == 'q') {myTemp01  = 'r'}                                      
+      if (myString01[myLoop01] == 'r') {myTemp01  = 's'}                                      
+      if (myString01[myLoop01] == 's') {myTemp01  = 't'}                                      
+      if (myString01[myLoop01] == 't') {myTemp01  = 'u'}                                      
+      if (myString01[myLoop01] == 'u') {myTemp01  = 'v'}                                      
+      if (myString01[myLoop01] == 'v') {myTemp01  = 'w'} 
+      if (myString01[myLoop01] == 'w') {myTemp01  = 'x'}
+      if (myString01[myLoop01] == 'x') {myTemp01  = 'y'}                              
+      if (myString01[myLoop01] == 'y') {myTemp01  = 'z'}                                      
+      if (myString01[myLoop01] == 'z') {myTemp01  = 'a'}                                     
       if (myString01[myLoop01] == '26') {myTemp01  = 'z'}                                      
            
                                             
@@ -95,6 +170,5 @@ let myTemp01 = ' '
                                             }
                                               document.getElementById('myArea03').value = myString01.join('')
 }"><br><br>
-
 
 <textarea id="myArea03" rows=4 cols=70></textarea><br> 
