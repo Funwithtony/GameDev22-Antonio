@@ -54,17 +54,11 @@
    let myGlobalX = 0
    let myClock
    
-   function getOffset() {
-  const rect = .getBoundingClientRect("myImg01");
-  return {
-    left: rect.left + window.scrollX,
-    top: rect.top + window.scrollY
-  };
-}
+window.scrollY + document.querySelector('#elementId').getBoundingClientRect().top 
 
  
 function mygravity() {
-if(getOffset("myImg01").top > 100){
+if(getBoundingClientRect("myImg01").top > 100){
  objImage.style.top = parseInt(objImage.style.top) + 5 + "px";
  }
    }
