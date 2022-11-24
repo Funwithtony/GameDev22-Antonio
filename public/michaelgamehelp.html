@@ -1,0 +1,165 @@
+<h6> Version 0.0.1 </h6>
+
+ <h1 align=center>Level two!</h1>
+<br><br><br><br>
+
+<head>
+   <h4> Use arrow keys to allow mario to jump infront of the car </h4>
+   
+   
+   
+<input type=button value="Auto Background Left" onclick="{
+  clearInterval(myClock)
+  let myTemp = '100px 0px'
+  myClock = setInterval(function(){
+      myGlobalX -= 5
+      myTemp =  myGlobalX + 'px 0px'
+      document.getElementById('myBody').style.backgroundPosition = myTemp
+  }, 100)
+    
+}">
+
+
+<input type=button value="Image Right Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+  myCheckHit()     // checks for all collisions
+}"><br><br>
+   
+   
+</head>
+
+
+
+<style>
+   
+   myImg02{
+      opacity: 0.5;
+   }
+   
+   
+</style>
+
+
+
+
+
+
+<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://i.stack.imgur.com/WHu9Z.png">
+
+
+
+<script>
+
+   // global variables here
+   let myGlobalX = 0
+   let myClock
+
+function mygravity() {
+if(y != 100){
+ objImage.style.top = parseInt(objImage.style.top) + 5 + "px";
+ }
+   }
+
+  
+
+   setInterval(mygravity,100)
+   
+   // global functions here
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+
+function myCheckHit(){
+   if ( myHitOther('myImg01','myImg02') ){
+       alert('Mission failed, successfully!?')  
+       document.getElementById('myImg01').style.left = '5px'
+       location = 'game-level-3.html'  // go to your next level
+   }
+
+
+   // more if statements here like the above
+
+
+
+}  // end of myCheckHit()
+
+
+  
+
+
+   
+   
+</script>
+
+<img id="myImg01" style="position:absolute; width:100px; height:80px; top: 100px; left:900px;"  src="https://spencerfsu15.files.wordpress.com/2015/09/mario_8bit.png">
+<img id="myImg02" style="position:relative; width:100px; height:80px; top: 300px; left:100px;" src="https://freepngimg.com/thumb/toyota/17-toyota-png-image-car-image.png">
+   
+   
+   
+   
+    <script type="text/javascript">
+            //init object globally
+            var objImage = null;
+            function init() {
+                objImage = document.getElementById("myImg01");
+                objImage.style.position = "relative";  
+            }
+            function getKeyAndMove(e) {
+                var key_code = e.which || e.keyCode;
+                switch (key_code) {
+                    case 37: //left arrow key
+                        moveLeft();
+                        break;
+                    case 38: //Up arrow key
+                        moveUp();
+                        break;
+                    case 39: //right arrow key
+                        moveRight();
+                        break;
+                    case 40: //down arrow key
+                        moveDown();
+                        break;
+                }
+            }
+            function moveLeft() {
+                objImage.style.left = parseInt(objImage.style.left) - 5 + "px";
+               myCheckHit()
+            }
+            function moveUp() {
+                objImage.style.top = parseInt(objImage.style.top) - 20 + "px";
+               myCheckHit()
+            }
+            function moveRight() {
+                objImage.style.left = parseInt(objImage.style.left) + 5 + "px";
+               myCheckHit()
+            }
+            function moveDown() {
+                objImage.style.top = parseInt(objImage.style.top) + 5 + "px";
+               myCheckHit()
+            }
+            window.onload = init;
+            
+        </script>
+        
+
+
+    <body onkeydown="getKeyAndMove(event)">
+
+        </body>
+   
+   
+   </html>
