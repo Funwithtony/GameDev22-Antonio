@@ -54,11 +54,10 @@
    let myGlobalX = 0
    let myClock
    
-window.scrollY + document.querySelector('myImg01').getBoundingClientRect().top 
 
- 
+
 function mygravity() {
-if(getBoundingClientRect("myImg01").top > 100){
+if( parseInt(document.getElementById('myImg01').style.top)    >= 100){
  objImage.style.top = parseInt(objImage.style.top) + 5 + "px";
  }
    }
