@@ -1,36 +1,33 @@
-<style>
- body {
-    margin:0; padding:0; border:0;
-    height: 100%
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0; }
 }
-#wrapper {
-    min-width: 800px;
-    max-width: 1000px;
-    min-height: 100%;
-    margin: 0 auto;
-    text-align: left;
-    position: relative
+@-moz-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0; }
 }
-#wrap-left, #wrap-right {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+@-webkit-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0; }
 }
-#wrap-left {
-    background: url('http://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Color_icon_blue.svg/250px-Color_icon_blue.svg.png') repeat-y top left
+@-ms-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0; }
 }
-#wrap-right {
-    background: url('http://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Color_icon_red.svg/250px-Color_icon_red.svg.png') repeat-y top right
+@-o-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0; }
 }
-#content {
-    position: relative
+
+html { 
+    width: 100%; 
+    height: 100%; 
+    background-image: url(background.png);
+    background-position: 0px 0px;
+
+    animation: animatedBackground 10s linear infinite;
+    -moz-animation: animatedBackground 10s linear infinite;
+    -webkit-animation: animatedBackground 10s linear infinite;
+    -ms-animation: animatedBackground 10s linear infinite;
+    -o-animation: animatedBackground 10s linear infinite;
 }
- </style>
-<div id="wrapper">
-    <div id="wrap-left"></div><div id="wrap-right"></div>
-    <table id="content">
-        <tr><td>fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />
-        <!--fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg<br />fdgdg-->
-        </td></tr>
-    </table>
-</div>
