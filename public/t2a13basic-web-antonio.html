@@ -5,9 +5,9 @@
     0% { background-position: 0 0; }
     100% { background-position: -30000px 0; }
 }
-@keyframes playermovement {
+@keyframes playermovementleft {
 	0% { left:0px; top:0px;}
-	100%{ left: 100px; top:0px;}
+	100%{ left: 10px; top:0px;}
 	}
 	
     #animate-area { 
@@ -26,6 +26,6 @@
 
 
 <img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs3iEQHyWLIJhYi9ip8-dCl7YbaSjGiWvqiQ&usqp=CAU" onClick= "{
-document.getElementById('myImg01').style.animation = 'playermovement 1s linear infinite;';
+document.getElementById('myImg01').style.animation = 'playermovementleft .1s linear infinite';
 }">
 <div id="animate-area"></div>
