@@ -1,4 +1,8 @@
 
+<audio id="my-audio">
+  <source src="your-sound-file.mp3" type="audio/mp3">
+  <p>Your browser does not support the audio element.</p>
+</audio>
 
 <style>
 @keyframes animatedBackground {
@@ -23,7 +27,10 @@
 	animation: animatedBackground 100s linear infinite;
 }
 </style>
-
+<script>
+	
+  var audio = document.getElementById("my-audio");	
+</script>
 
 
 <img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs3iEQHyWLIJhYi9ip8-dCl7YbaSjGiWvqiQ&usqp=CAU" onClick= "{
