@@ -33,7 +33,8 @@
     // Check which key was pressed
     if (event.keyCode === 37) {
       // Left arrow was pressed
-      // Move the object to the left
+      document.getElementById('myImg01').style.animation = 'playermovementleft .1s linear infinite';
+	    document.getElementById('myImg01').style.animation = '';
 	      alert("left");
     } else if (event.keyCode === 38) {
       // Up arrow was pressed
