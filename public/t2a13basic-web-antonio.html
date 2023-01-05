@@ -1,9 +1,4 @@
 
-<audio id="my-audio">
-  <source src="public_Yeh (1).m4a" type="audio/mp3">
-  <p>Your browser does not support the audio element.</p>
-</audio>
-
 <style>
 @keyframes animatedBackground {
     0% { background-position: 0 0; }
@@ -23,51 +18,13 @@
 </style>
 
 	<script>
-setInterval(gameLoop,100)
-let rectX = 0;
-let rectY = 0;
-
-function gameLoop() {
-	
-    update();
-    draw();
-
-    window.requestAnimationFrame(gameLoop);
-}
-
-function update() {
-    rectX += 1;
-    rectY += 1;
-}
-  window.addEventListener("keydown", function(event) {
-
-    if (event.keyCode === 37) {
-      
-    } else if (event.keyCode === 38) {
-      
-	  alert("up");
-    } else if (event.keyCode === 39) {
-   
-	  alert("right");
-    } else if (event.keyCode === 40) {
-
- 	  alert("down");
-    }
-  });
-
-  var audio = document.getElementById("my-audio");	
-	audio.play();
-		
-		function draw() {
+    function draw() {
     context.fillStyle = '#ff8080';
     context.fillRect(rectX, rectY, 150, 100);
 }
 </script>
-
+draw()
 <h2 align = center> stuff</h2>
-<input type=button value=sound onClick="{
-    audio.play();
-}">
 
 
 <div id="animate-area"></div>
