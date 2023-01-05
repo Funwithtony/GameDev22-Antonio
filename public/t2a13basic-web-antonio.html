@@ -15,15 +15,22 @@
 
 	animation: animatedBackground 100s linear infinite;
 }
-</style>
+	
 
-	<script>
-    function draw() {
-    context.fillStyle = '#ff8080';
-    context.fillRect(rectX, rectY, 150, 100);
-}
+</style>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+
+<script>
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+ctx.arc(200, 200, 50, 0, 2 * Math.PI);
+
+ctx.fillStyle = 'red';
+ctx.fill();
+
 </script>
-draw()
+
 <h2 align = center> stuff</h2>
 
 
