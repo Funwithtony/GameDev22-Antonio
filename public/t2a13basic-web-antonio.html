@@ -21,10 +21,12 @@
 <canvas id="animate-area" width="400" height="400"></canvas>
 
 <script>
+let playerx = 200;
+let playery = 200; 	
 const canvas = document.getElementById('animate-area');
 const ctx = canvas.getContext('2d');
 
-ctx.arc(200, 200, 20, 0, 2 * Math.PI);
+ctx.arc(playerx, playery, 20, 0, 2 * Math.PI);
 
 ctx.fillStyle = 'red';
 ctx.fill();
