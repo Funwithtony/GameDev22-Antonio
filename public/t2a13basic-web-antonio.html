@@ -22,9 +22,13 @@
 
 <script>
 	
+function Gameupdate() 
+{
+clearvisual();
+Updatevisual();
+} 	
 	
-	
-	
+function Updatevisual(){	
 let playerx = 200;
 let playery = 200; 	
 const canvas = document.getElementById('animate-area');
@@ -34,7 +38,8 @@ ctx.arc(playerx, playery, 20, 0, 2 * Math.PI);
 
 ctx.fillStyle = 'red';
 ctx.fill();
-
+}
+setinterval(Gameupdate,100)
 </script>
 
 <h2 align = center> stuff</h2>
