@@ -33,10 +33,52 @@ function Updatevisual(){
 	const canvas = document.getElementById('animate-area');
 const ctx = canvas.getContext('2d');
 ctx.clearRect(0, 0, 400, 400);
+<style>
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -30000px 0; }
+}
+    #animate-area { 
+	width: 100%; 
+	height: 100%; 
+	background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+	
+	    background-position: 0px 0px;
+	background-size: cover;
+	background-repeat: no-repeat-y; 
+
+	animation: animatedBackground 100s linear infinite;
+}
+	
+
+</style>
+<canvas id="animate-area" width="400" height="400"></canvas>
+<script>
+var playerx = 200;
+var playery = 200; 
+function Gameupdate() 
+{
+playerx	+= 5;
+
+Updatevisual();
+} 	
+	
+function Updatevisual(){
+	const canvas = document.getElementById('animate-area');
+const ctx = canvas.getContext('2d');
+ctx.clearRect(0, 0, 400, 400);
 ctx.arc(playerx, playery, 50, 0, 2 * Math.PI);
 
 ctx.fillStyle = 'red';
 ctx.fill();
+}
+setInterval(Gameupdate,100);
+</script>
+
+<h2 align = center> stuff</h2>
+
+
+
 }
 setInterval(Gameupdate,100);
 </script>
