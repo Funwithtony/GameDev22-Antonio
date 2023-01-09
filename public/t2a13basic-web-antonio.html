@@ -20,8 +20,6 @@
 </style>
 <canvas id="animate-area" width="400" height="400"></canvas>
 <script>
-const canvas = document.getElementById('animate-area');
-const ctx = canvas.getContext('2d');
 var playerx = 200;
 var playery = 200; 
 function Gameupdate() 
@@ -31,8 +29,10 @@ playerx	+= 5;
 Updatevisual();
 } 	
 	
-function Updatevisual(){		
-ctx.clearRect(0,0,20000,20000);
+function Updatevisual(){
+	const canvas = document.getElementById('animate-area');
+const ctx = canvas.getContext('2d');
+ctx.clearRect(0, 0, canvas.width, canvas.height);
 ctx.arc(playerx, playery, 50, 0, 2 * Math.PI);
 
 ctx.fillStyle = 'red';
