@@ -20,18 +20,19 @@
 </style>
 <canvas id="animate-area" width="400" height="400"></canvas>
 <script>
+const canvas = document.getElementById('animate-area');
+const ctx = canvas.getContext('2d');
 var playerx = 200;
 var playery = 200; 
 function Gameupdate() 
 {
-playerx	+= 20;
+const ctx = canvas.getContext('2d');
+playerx	+= 5;
 ctx.clearRect(0, 0, canvas.width, canvas.height);
 Updatevisual();
 } 	
 	
 function Updatevisual(){		
-const canvas = document.getElementById('animate-area');
-const ctx = canvas.getContext('2d');
 
 ctx.arc(playerx, playery, 50, 0, 2 * Math.PI);
 
