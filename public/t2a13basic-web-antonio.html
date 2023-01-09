@@ -32,7 +32,7 @@ Updatevisual();
 function Updatevisual(){
 	const canvas = document.getElementById('animate-area');
 const ctx = canvas.getContext('2d');
-ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.clearRect(0, 0, 400, 400);
 ctx.arc(playerx, playery, 50, 0, 2 * Math.PI);
 
 ctx.fillStyle = 'red';
