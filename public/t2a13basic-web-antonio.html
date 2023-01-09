@@ -26,14 +26,13 @@ var playerx = 200;
 var playery = 200; 
 function Gameupdate() 
 {
-const ctx = canvas.getContext('2d');
 playerx	+= 5;
-ctx.clearRect(0, 0, canvas.width, canvas.height);
+
 Updatevisual();
 } 	
 	
 function Updatevisual(){		
-
+ctx.clearRect(0, 0, canvas.width, canvas.height);
 ctx.arc(playerx, playery, 50, 0, 2 * Math.PI);
 
 ctx.fillStyle = 'red';
