@@ -65,10 +65,10 @@ function animate() {
    
 
     // Draw the object at its new position
-    ctx.arc(200,200, 50, 0, 2 * Math.PI);
-
-ctx.fillStyle = 'red';
+    ctx.fillRect(x, y, 50, 50);
+    ctx.fillStyle = 'red';
 ctx.fill();
+
 
     // Request another animation frame
     requestAnimationFrame(animate);
