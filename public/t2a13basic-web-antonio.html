@@ -65,7 +65,10 @@ function animate() {
     y += velocity;
 
     // Draw the object at its new position
-    ctx.fillRect(x, y, 50, 50);
+    ctx.arc(200,200, 50, 0, 2 * Math.PI);
+
+ctx.fillStyle = 'red';
+ctx.fill();
 
     // Request another animation frame
     requestAnimationFrame(animate);
