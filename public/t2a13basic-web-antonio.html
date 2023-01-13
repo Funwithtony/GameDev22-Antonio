@@ -66,8 +66,8 @@ var x = 0;
 var y = 0;
 
 // Set the speed of the object
-var velocity = 2;
-
+var velocity = .2;
+var maxspeed = 3
 // Get a reference to the canvas and the context
 var canvas = document.getElementById("animate-area");
 var ctx = canvas.getContext("2d");
@@ -81,7 +81,8 @@ function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Update the position of the object
-    x += velocity;
+	
+    if (x < maxspeed &&  )
    
 
     // Draw the object at its new position
